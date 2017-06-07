@@ -17,3 +17,15 @@ Starvation and deadlocks (race conditions and live-locks also) are a real big pr
 talking about multi-threaded applications. Version v2 of the solution presented minimizes starvation among threads,
 however it makes philosophers eat considerably less times than in version v1, since they have additional overhead in 
 checking if they just ate or not.
+
+
+## Producer/Consumer problems
+
+# Ordered P/C
+
+In this version of the producer consumer, several producers put some item in a shared queue object,
+which is then retrieved by the consumers, but maintaining the expected order of operations.
+
+# Unordered P/C
+
+In this version, producers and consume will put and get items from the queue as they are scheduled.
