@@ -1,17 +1,17 @@
-## Java Solution to the famous Dinning Philosophers problem
+# - Java Solution to the famous Dinning Philosophers problem
 
-# v1
+## v1
 
 In this version, despite avoiding deadlock conditions, starvation of threads is still possible. 
 For enough runs of "eating and thinking", the difference between threads will be more notorious.
 
-# v2
+## v2
 
 This version won't let the same thread eat twice in a row. This does not completely avoid 
 the starvation problem, only minimizes it (if we have a big number of philosophers, not letting one eat 
 twice in a row will have less impact, as one can imagine). 
 
-# v1 vs v2
+## v1 vs v2
 
 Starvation and deadlocks (race conditions and live-locks also) are a real big problem when 
 talking about multi-threaded applications. Version v2 of the solution presented minimizes starvation among threads,
@@ -19,13 +19,13 @@ however it makes philosophers eat considerably less times than in version v1, si
 checking if they just ate or not.
 
 
-## Producer/Consumer problems
+# - Producer/Consumer problems
 
-# Ordered P/C
+## Ordered P/C
 
 In this version of the producer consumer, several producers put some item in a shared queue object,
 which is then retrieved by the consumers, but maintaining the expected order of operations.
 
-# Unordered P/C
+## Unordered P/C
 
 In this version, producers and consume will put and get items from the queue as they are scheduled.
